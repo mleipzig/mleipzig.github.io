@@ -1,6 +1,6 @@
 ---
 title: "Buy me a boba"
-permalink: "/buy-me-a-coffee.html"
+permalink: "/buy-me-a-boba.html"
 ---
 
 Thank you for considering to support me! If you enjoy my content and would like to help me keep going, please consider buying me a boba. Your support is greatly appreciated!

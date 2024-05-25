@@ -35,7 +35,7 @@ defaults:
     values:
       layout: post
       author: sal
-      avatar: /assets/images/m_leipzig
+      avatar: /assets/images/m_leipzig.jpg
       
   # all pages
   - scope:
