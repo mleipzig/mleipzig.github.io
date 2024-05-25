@@ -1,6 +1,6 @@
-{% if post.title %}
 <div class="mb-5 d-flex justify-content-between main-loop-card">
   <div class="pr-3">
+    {% if post.title %}
     <h2 class="mb-1 h4 font-weight-bold">
       <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h2>
@@ -19,6 +19,7 @@
     <small class="text-muted">
       {{ post.date | date: '%b %d, %Y' }}
     </small>
+    {% endif %}
   </div>
   {% if post.image %}
   <div class="col-md-3 pr-0 text-right">
