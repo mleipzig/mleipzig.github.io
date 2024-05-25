@@ -20,8 +20,8 @@ plugins:
   
 authors:
     matthew:
-      name:           'Matthew Leipzig'
-      avatar:         /assets/images/sam.jpg
+      name:           "Matthew Leipzig"
+      avatar:         assets/images/sam.jpg
       bio:            "Hi, I am Matthew Leipzig. I write about statistics and causal inference."
       email:          mleipzig@stanford.edu
       twitter:        https://x.com/MattLeipzig
@@ -35,7 +35,7 @@ defaults:
     values:
       layout: post
       author: Matthew
-      avatar:  /assets/images/sam.jpg
+      avatar: assets/images/sam.jpg
       
   # all pages
   - scope:
