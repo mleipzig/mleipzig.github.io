@@ -1,11 +1,8 @@
 ---
-title: "Buy me a boba"
+title: "Buy Me a Boba"
 permalink: "/buy-me-a-boba.html"
 ---
 
 Thank you for considering to support me! If you enjoy my content and would like to help me keep going, please consider buying me a boba. Your support is greatly appreciated!
 
-My Venmo is @Matt_Leipzig.
-
-<a class="btn btn-danger" href="https://www.wowthemes.net/donate/">Buy me a boba</a>
-
+My Venmo is Matt_Leipzig.
