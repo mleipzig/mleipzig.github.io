@@ -1,6 +1,6 @@
 # Site
 name: 'Matthew Leipzig'
-description: 'Matt's website.'
+description: "Matt's website."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
@@ -21,7 +21,7 @@ plugins:
 authors:
     matthew:
       name:           Matthew
-      avatar:         /assets/images/m_leipzig.jpg
+      avatar:         "/assets/images/m_leipzig.jpg"
       bio:            "Hi, I am Matthew Leipzig. I write about statistics and causal inference."
       email:          mleipzig@stanford.edu
       twitter:        https://x.com/MattLeipzig
@@ -35,7 +35,7 @@ defaults:
     values:
       layout: post
       author: sal
-      avatar: /assets/images/avatar1.jpg
+      avatar: "/assets/images/avatar1.jpg"
       
   # all pages
   - scope:
