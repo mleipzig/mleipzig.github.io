@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Hello, world!"
+title:  "Hello World!"
 categories: [ Other ]
 image: assets/images/demo1.jpg
 ---
-Hello, world. 
+
+Hello World. 
