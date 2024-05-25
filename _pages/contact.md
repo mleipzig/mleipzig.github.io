@@ -3,16 +3,19 @@ title: "Contact"
 permalink: "/contact.html"
 ---
 
-<form action="https://formspree.io/{{site.email}}" method="POST">    
-<p class="mb-4">Thank you for attempting to contact me. I will reply as soon as possible!</p>
-<div class="form-group row">
-<div class="col-md-6">
-<input class="form-control" type="text" name="name" placeholder="Name*" required>
-</div>
-<div class="col-md-6">
-<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address*" required>
-</div>
-</div>
-<textarea rows="8" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>    
-<input class="btn btn-success" type="submit" value="Send">
+---
+title: "Contact"
+layout: default
+permalink: /contact.html
+---
+
+<h2>Contact Me</h2>
+<p>Feel free to contact me by filling out the form below:</p>
+
+<form action="https://formspree.io/f/mpzveodv" method="POST">
+  <label for="email">Your email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="message">Your message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <button type="submit">Send</button>
 </form>
