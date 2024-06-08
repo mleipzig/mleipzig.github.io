@@ -1,12 +1,13 @@
+To add the Twitter embedding to the front page of your Jekyll website, you can place the embed code within the `<div class="container">` section in your `index.html` file. Here's how you can integrate it:
+
+```html
 ---
 title: "Matthew Leipzig's Website"
 layout: default
 pagination:
     enabled: true
-description: "A great Jekyll theme developed by Sal @wowthemesnet."
+description: "Matthew Leipzig's website"
 ---
-
-
 
 <div class="container">
 {% if page.url == "/" %}
@@ -137,7 +138,13 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 </div>
     
 </div>
-    
+
+<!-- Add the Twitter timeline embed code here -->
+<div class="twitter-container">
+    <a class="twitter-timeline" href="https://twitter.com/MattLeipzig?ref_src=twsrc%5Etfw">Tweets by MattLeipzig</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
 {% if post.tags contains "sticky" %}
@@ -151,7 +158,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 </p>
                 <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
             </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
+            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">    
             </div>
         </div>
     </div>
@@ -194,31 +201,4 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
               {% for page in (1..paginator.total_pages) %}
                 {% if page == paginator.page %}
-                <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
-                {% elsif page == 1 %}
-                <li class="page-item"><a class="page-link" href="{{site.baseurl}}/">{{ page }}</a></li>
-                {% else %}
-                <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-                {% endif %}
-              {% endfor %}
-
-              {% if paginator.next_page %}
-                <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-              {% else %}
-                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
-              {% endif %}
-            </ul>
-            {% endif %}      
-        </div>
-        
-    </div>
-    
-    <div class="col-md-4">
-        {% include sidebar-featured.html %}    
-    </div>
-    
-</div>
-
-
-
-</div>
+                <li class="page-item disabled"><span class="webjeda
