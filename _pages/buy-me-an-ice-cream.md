@@ -3,6 +3,21 @@ title: "Buy Me an Ice Cream"
 permalink: "/buy-me-an-ice-cream.html"
 ---
 
-If you enjoy my content and would like to help me keep going, please consider buying me a boba. Your support is greatly appreciated!
+<style type="text/css" media="screen">
+  .image-container {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Set a maximum height for the image */
+  }
+</style>
+
+If you enjoy my content and would like to help me keep going, please consider buying me an ice cream. Your support is greatly appreciated!
 
 My Venmo is @Matt_Leipzig.
+
+<div class="image-container">
+  <img src="/assets/images/ice_cream_boy.jpeg" alt="yum yum">
+</div>

@@ -20,12 +20,15 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    matthew:
-      name:           "Matthew Leipzig"
-      avatar:         assets/images/sam.jpg
-      bio:            "Hi, I am Matthew Leipzig. I write about statistics and causal inference."
-      email:          mleipzig@stanford.edu
-      twitter:        https://x.com/MattLeipzig
+  matthew:
+    name: "Matthew Leipzig"
+    avatar: assets/images/sam.jpg
+    bio: "Hi, I am Matthew Leipzig. I write about statistics and causal inference."
+    email: mleipzig@stanford.edu
+    twitter: "https://x.com/MattLeipzig"
+    google_scholar: "https://scholar.google.com/citations?user=5ng5MgYAAAAJ&hl=en"
+
+
  
 # Defaults
 defaults:
