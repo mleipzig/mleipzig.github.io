@@ -4,13 +4,13 @@ title: "Matthew Leipzig's website"
 description: "Matt's website."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: ''
+baseurl: '' # For GitHub Pages without project-specific subdirectory
 disqus: 'demowebsite'
 email: 'mleipzig@stanford.edu'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 include: ["_pages"]
-permalink: /:title/
+permalink: /:title # Changed here
 
 # Plugins
 plugins: 
@@ -20,15 +20,12 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-  matthew:
-    name: "Matthew Leipzig"
-    avatar: assets/images/sam.jpg
-    bio: "Hi, I am Matthew Leipzig. I write about statistics and causal inference."
-    email: mleipzig@stanford.edu
-    twitter: "https://x.com/MattLeipzig"
-    google_scholar: "https://scholar.google.com/citations?user=5ng5MgYAAAAJ&hl=en"
-
-
+    matthew:
+      name:           "Matthew Leipzig"
+      avatar:         assets/images/sam.jpg
+      bio:            "Hi, I am Matthew Leipzig. I write about statistics and causal inference."
+      email:          mleipzig@stanford.edu
+      twitter:        https://x.com/MattLeipzig
  
 # Defaults
 defaults:
@@ -53,8 +50,6 @@ highlighter: rouge
 
 # Paginate
 paginate: 10
-
-
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
