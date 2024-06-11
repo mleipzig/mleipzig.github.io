@@ -74,7 +74,7 @@ layout: default
             </div>
  
             <!-- Mailchimp Subscribe Form -->
-            {% if site.mailchimp-list %}
+           <!-- {% if site.mailchimp-list %}
             <div class="border p-5 bg-lightblue">
                 <div class="row justify-content-between">
                     <div class="col-md-6 mb-2 mb-md-0">
@@ -96,8 +96,8 @@ layout: default
                         </div>
                     </div>
                 </div>
-            </div>
-            {% endif %}
+            </div> -->
+            {% endif %} 
             
             <!-- Author Box -->
             {% if page.author %}                
@@ -114,15 +114,17 @@ layout: default
             </div>                
             {% endif %}
             
-            <!-- Comments -->
-            {% if page.comments != false %}
+            <!-- {%- comment -%}
+            Comments -->
+           <!-- {% if page.comments != false %}
                 {% include comments.html %}
             {% endif %}
+            {%- endcomment -%}--> 
             
         </div>
         
     </div>
-</div>
+</div> 
 
 <!-- Alertbar Prev/Next -->
 <div class="alertbar">
@@ -135,6 +137,10 @@ layout: default
           {% endif %}
           {% if page.next.url %}
             <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="{{ site.baseurl }}{{ page.next.url }}"> {{page.next.title}} {% if page.next.image %} <img height="30px" class="ml-1" src="{{site.baseurl}}/{{page.next.image}}"> {% endif %}</a>
+                <a class="text-dark" href="{{ site.baseurl }}{{ page.next.url }}"> {{page.next title}} {% if page.next.image %} <img height="30px" class="ml-1" src="{{site.baseurl}}/{{page.next.image}}"> {% endif %}
+                </a>
             </div>
-          
+          {% endif %}
+        </div>
+    </div>
+</div>

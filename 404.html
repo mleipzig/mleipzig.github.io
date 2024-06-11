@@ -1,26 +1,36 @@
 ---
 layout: default
+title: "Page Not Found"
+permalink: /404.html
 ---
 
 <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
-    max-width: 600px;
+    max-width: 80%;
     text-align: center;
+    padding: 20px; /* Adding some padding to ensure content does not touch the edges */
   }
   h1 {
     margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
+    font-size: 3em; /* Adjusted font size to fit better */
+    line-height: 1.2; /* Slightly increased line-height */
     letter-spacing: -1px;
+  }
+  p {
+    margin: 20px 0;
+    font-size: 1.2em; /* Slightly increased font size for readability */
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Set a maximum height for the image */
   }
 </style>
 
 <div class="container">
   <h1>404</h1>
-
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
-  <img src="/assets/images/404.jpg" alt="Description of the image" width="300" height="200">
+  <img src="/assets/images/404.jpg" alt="404 error">
 </div>
-
