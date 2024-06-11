@@ -1,6 +1,6 @@
 ---
 title: "Buy Me an Ice Cream"
-permalink: "/buy-me-an-ice-cream.html"
+permalink: "/buy-me-an-ice-cream/"
 ---
 
 <style type="text/css" media="screen">
