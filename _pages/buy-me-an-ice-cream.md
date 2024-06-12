@@ -14,7 +14,7 @@ permalink: "/buy-me-an-ice-cream/"
   }
 </style>
 
-If you enjoy my content and would like to help me keep going, please consider buying me an ice cream. Your support is greatly appreciated!
+If you enjoy my content and would like to help me keep going, please consider buying me ice cream. I eat a lot of it. Your support is greatly appreciated!
 
 My Venmo is @Matt_Leipzig.
 
