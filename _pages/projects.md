@@ -13,7 +13,7 @@ My primary work uses novel statistical techniques to evaluate policies and treat
 
 In addition to solving current disputes, I also believe in approaching problems from new angles. While traditional analyses often assume linear relationships, our team's work with nonlinear spline models has shown that many key aspects of transplantation, such as heart size and BMI, have clear nonlinear effects on post-transplant outcomes. This has an immense impact on decision-making for transplant surgeons, such as organ allocation prioritization and determining which donors are optimal matches for each patient. Our findings indicate that at a BMI of 30, heart transplant recipients experience a sharp increase in the risk of mortality with each additional BMI point.
 
-![Nonlinear BMI](../assets/nonlinear_bmi.jpg)
+![Nonlinear BMI](../assets/images/nonlinear_bmi.jpg)
 
 ## Machine Learning
 
