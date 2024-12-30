@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" crossorigin="anonymous">
 
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
@@ -21,6 +21,7 @@
 
     <!-- Theme Stylesheet -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/modifications.css">
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script src="{{site.baseurl}}/assets/js/jquery.js"></script>
@@ -33,17 +34,17 @@
 <body class="{% if page.url == "/" %} homefirstpage {% endif %}">
 
     <!-- Navbar -->
-    <nav id="MagicMenu" class="topnav border-bottom navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="{{ site.baseurl }}/"><strong>{{site.name}}</strong></a>
+    <nav class="topnav border-bottom navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="flex w-100">
+        <a style="flex-grow: 1" class="navbar-brand" href="{{ site.baseurl }}/"><strong>{{site.name}}</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="navbarColor02" style="">
-            <ul class="navbar-nav mr-auto d-flex align-items-center">
+        <div class="navbar-collapse collapse" style="justify-content: end;" id="navbarColor02">
+            <ul class="navbar-nav d-flex">
                {% include menu-header.html %}
             </ul>
-            <ul class="navbar-nav ml-auto d-flex align-items-center">
+            <ul class="navbar-nav d-flex mt-2 mb-2">
                 {% include search-lunr.html %}
             </ul>
         </div>

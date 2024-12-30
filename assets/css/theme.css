@@ -1,23 +1,3 @@
-/* 
- * Extra changes to Mundana by b0kch01
- * 12/29/24
- */
-
-.hero {
-	background: #f7f7f7;
-	padding: 5rem 0;
-	margin-bottom: 2rem;
-}
-
-/* Since header is removed, we don't want to hide this anymore  */
-.homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
-	display: auto !important;
-}
-
-.medium-zoom-overlay,
-.medium-zoom-image--opened {
-  z-index: 9999;
-}
 
 /*!
  * Mundana Jekyll Theme (https://www.wowthemes.net/mundana-jekyll-theme/)
@@ -123,10 +103,10 @@ a.text-dark:hover {
 	border-radius:0.3rem;
 }
 .btn-sm,.btn-group-sm>.btn {
-	padding:0.15rem .7rem;
+	padding:0.25rem .8rem;
 	font-size:0.875rem;
 	line-height:1.5;
-	border-radius:0.2rem;
+	border-radius:0.4rem;
 }
 .btn-link:hover,.btn-link:focus {
 	box-shadow:none;
@@ -282,13 +262,30 @@ a.text-dark:hover {
 .navbar-light .navbar-text a:hover,.navbar-light .navbar-text a:focus {
 	color:rgba(0,0,0,0.9);
 }
-.bd-search .form-control {
+.bd-search {
+	display: flex;
+	position: relative;
+	align-items: center;
 	font-size:.85rem;
 	color:#999;
+	margin: 0;
+}
+
+.bd-search i {
+	position: absolute;
+	left: 10px;
+}
+
+.bd-search input {
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	margin: 0;
 	border-radius:30px;
-	height:35px;
 	border:1px solid #eee;
 }
+
 .mb-2rem {
 	margin-bottom:2rem;
 }

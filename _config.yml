@@ -1,5 +1,5 @@
 # Site
-name: 'Matthew Leipzig'
+name: 'mleipzig.'
 title: "Matthew Leipzig's website"
 description: "Matt's website."
 logo: 'assets/images/logo.png'
@@ -23,7 +23,7 @@ authors:
     matthew:
       name:           "Matthew Leipzig"
       avatar:         assets/images/sam.jpg
-      bio:            "Hi, I am Matthew Leipzig. I write about statistics and causal inference."
+      bio:            "I write about statistics and causal inference."
       email:          mleipzig@stanford.edu
       twitter:        https://x.com/MattLeipzig
  

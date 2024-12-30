@@ -1,0 +1,59 @@
+/* 
+ * Extra changes to Mundana by b0kch01
+ * 12/29/24
+ */
+
+.fancy-font {
+    font-family: 'BitFont';
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.fancy-font > .text {
+    background: #000000;
+background: linear-gradient(to top, #000000 0%, #797979 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.fancy-font > .emoji {
+    background: #FFB52D;
+    background: linear-gradient(to top, #FFB52D 0%, #FFEE8D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.flex {
+    display: flex;
+}
+
+.hero {
+	/* background: #f7f7f7; */
+	padding: 5rem 0;
+	margin-bottom: 2rem;
+    text-center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.max-w-sm {
+    max-width: 42rem;
+}
+
+/* Since header is removed, we don't want to hide this anymore  */
+.homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
+	display: auto !important;
+}
+
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: 9999;
+}
+
+@font-face {
+  font-family: BitFont;
+  src: url("/assets/fonts/BitFont-bold.otf");
+}
