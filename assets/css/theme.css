@@ -1,3 +1,24 @@
+/* 
+ * Extra changes to Mundana by b0kch01
+ * 12/29/24
+ */
+
+.hero {
+	background: #f7f7f7;
+	padding: 5rem 0;
+	margin-bottom: 2rem;
+}
+
+/* Since header is removed, we don't want to hide this anymore  */
+.homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
+	display: auto !important;
+}
+
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: 9999;
+}
+
 /*!
  * Mundana Jekyll Theme (https://www.wowthemes.net/mundana-jekyll-theme/)
  */
@@ -7,7 +28,6 @@ body {
 	padding-top:69.75px;
 }
 .site-content {
-	margin-top:30px;
 	min-height:400px;
 }
 .remove-site-content-margin {
@@ -645,7 +665,7 @@ footer {
 	top:70px;
 }
 .homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
-	display:none !important;
+	display:none;
 }
 .excerpt {
     color: rgba(0,0,0,0.59);

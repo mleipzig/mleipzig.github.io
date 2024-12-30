@@ -29,14 +29,14 @@ authors:
  
 # Defaults
 defaults:
-
   # all posts
   - scope:
       path: "_posts"
     values:
       layout: post
-      author: Matthew
+      author: matthew
       avatar: assets/images/sam.jpg
+      image: assets/images/12.jpg
       
   # all pages
   - scope:
