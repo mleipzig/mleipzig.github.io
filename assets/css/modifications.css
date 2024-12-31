@@ -3,60 +3,192 @@
  * 12/29/24
  */
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 16px));
+  }
+}
+
+@keyframes hand-wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+.hand-wave {
+  animation: hand-wave 0.8s ease-in-out forwards;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  transform-origin: bottom right;
+  cursor: default;
+  user-select: none;
+}
+
+.project-previews {
+  display: flex;
+  flex-direction: row;
+  overflow-x: visible;
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.project-slide {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  animation: 35s slide infinite linear;
+}
+
+.project-previews:hover .project-slide {
+  animation-play-state: paused;
+}
+
+.social-bar {
+  display: flex;
+  justify-content: center;
+  items-align: center;
+  gap: 16px;
+  font-size: 21px;
+}
+
+.social-bar a {
+  color: black;
+}
+
+.social-bar a:hover {
+  color: #03a87c;
+}
+
+.card__ {
+  color: black !important;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  border: rgba(0, 0, 0, 0.1) solid 1px;
+  border-radius: 0.4rem;
+  padding: 22px;
+  height: 170px;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.card__:hover {
+  opacity: 0.75;
+}
+
+.card__title {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.card__desc {
+  font-size: 0.9em;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.card__tag {
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1;
+  color: #03a87c;
+  margin-top: 16px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
 .fancy-font {
-    /*font-family: 'BitFont';*/
+  /*font-family: 'BitFont';*/
   letter-spacing: -3px;
-    font-family: Georgia;
-    font-weight: 600; 
-    font-size: 3.5rem;
-    margin: 0;
-    text-align: center;
+  font-family: Georgia;
+  font-weight: 600;
+  font-size: 3.5em;
+  margin: 0;
 }
 
 .fancy-font > .text {
-    background: #000000;
-    background: linear-gradient(to top, #000000 0%, #595959 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /*text-shadow: 0 5px 10px rgba(0,0,0,0.05);*/
+  background: #000000;
+  background: linear-gradient(to top, #000000 0%, #595959 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*text-shadow: 0 5px 10px rgba(0,0,0,0.05);*/
 }
 
 .fancy-font > .emoji {
-  background: #FFB52D;
-    background: linear-gradient(to top, #FFB52D 0%, #FFEE8D 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0px 25px #ffcc0033;
+  background: #ffb52d;
+  background: linear-gradient(to top, #ffb52d 0%, #ffee8d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0px 25px #ffcc0033;
 }
 
 .description {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: 500;
   opacity: 0.5;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .hero {
-	/* background: #f7f7f7; */
-	padding: 5rem 0;
-	margin-bottom: 2rem;
-    text-center;
+  padding: 5rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.gap-1 {
-    gap: 15px;
+.hero h2 {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 786px) {
+  .hero {
+    padding: 1.8rem 0;
+    font-size: 0.8rem;
+    text-align: left;
+    border: 0 !important;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .hero-stack {
+    align-items: start;
+  }
+
+  .hero .emoji {
+    display: none;
+  }
 }
 
 .max-w-sm {
-    max-width: 42rem;
+  max-width: 42rem;
 }
 
 /* Since header is removed, we don't want to hide this anymore  */
-.homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
-	display: auto !important;
+.homefirstpage .main-loop .main-loop-card:nth-child(-n + 5) {
+  display: auto !important;
 }
 
 .medium-zoom-overlay,

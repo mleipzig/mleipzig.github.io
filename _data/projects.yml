@@ -1,0 +1,18 @@
+- name: Research
+  projects:
+    - name: Causal Inference
+      description: My primary work uses novel statistical techniques to evaluate policies and treatments. Solving long-standing debates in science.
+
+    - name: Machine Learning
+      description: Building a foundation model for diagnosing cardiac diseases on MRI and automatically identifying heterogeneous subgroups.
+
+- name: Data Science Tools
+  projects:
+    - name: Tool One for Developers
+      description: I am also passionate about creating codebases and dashboards to facilitate my work and help others.
+
+    - name: The Great Tool
+      description: This is something really cool that I'm trying to release by 2027. Solves everything according to statistics.
+
+    - name: The Best Tooling
+      description: This is another cool tooling but this time its the best one. Made in R and Python.

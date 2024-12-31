@@ -8,9 +8,7 @@ description: "Matthew Leipzig's website!"
 
 <div class="hero border-bottom">
   <div class="container">
-    <div
-      class="flex flex-column justify-content-center align-items-center gap-1"
-    >
+    <div class="hero-stack">
       <img
         src="{{ site.baseurl }}/assets/images/sam.jpg"
         class="rounded-circle shadow-sm"
@@ -20,13 +18,37 @@ description: "Matthew Leipzig's website!"
         data-aos="zoom-out"
       />
       <h2 class="fancy-font" data-aos="zoom-out" data-aos-delay="50">
-        <span class="emoji">👋</span>
+        <span class="emoji hand-wave">👋</span>
         <span class="text">Hello, I'm Matthew</span>
       </h2>
-      <p class="text-center max-w-sm" data-aos="zoom-out" data-aos-delay="100">
+      <p class="max-w-sm" data-aos="zoom-out" data-aos-delay="100">
         <span class="description"> {{ site.authors.matthew.bio }} </span>
       </p>
     </div>
+
+    <div class="social-bar" >
+      <a data-aos="zoom-out" data-aos-delay="500" href="mailto:{{  site.authors.matthew.email }}">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a data-aos="zoom-out" data-aos-delay="600" href="{{ site.authors.matthew.github }}">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a data-aos="zoom-out" data-aos-delay="700" href="{{ site.authors.matthew.twitter }}">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="project-previews">
+  <div class="project-slide">
+    {% for category in site.data.projects %} {% for project in category.projects
+    %} {% include project-preview-card.liquid %} {% endfor %} {% endfor %}
+  </div>
+
+  <div class="project-slide">
+    {% for category in site.data.projects %} {% for project in category.projects
+    %} {% include project-preview-card.liquid %} {% endfor %} {% endfor %}
   </div>
 </div>
 

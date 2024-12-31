@@ -1,32 +1,33 @@
 # Site
-name: 'mleipzig.'
+name: "mleipzig."
 title: "Matthew Leipzig's website"
 description: "Matt's website."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
-baseurl: '' # For GitHub Pages without project-specific subdirectory
-disqus: 'demowebsite'
-email: 'mleipzig@stanford.edu'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+logo: "assets/images/logo.png"
+favicon: "assets/images/favicon.ico"
+baseurl: "" # For GitHub Pages without project-specific subdirectory
+disqus: "demowebsite"
+email: "mleipzig@stanford.edu"
+mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
 
 include: ["_pages"]
 permalink: /:title # Changed here
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  
+
 authors:
-    matthew:
-      name:           "Matthew Leipzig"
-      avatar:         assets/images/sam.jpg
-      bio:            "I write about statistics and causal inference."
-      email:          mleipzig@stanford.edu
-      twitter:        https://x.com/MattLeipzig
- 
+  matthew:
+    name: "Matthew Leipzig"
+    avatar: assets/images/sam.jpg
+    bio: "I write about statistics and causal inference. I also make cool coding projects in R."
+    email: mleipzig@stanford.edu
+    twitter: https://x.com/MattLeipzig
+    github: https://github.com/mleipzig
+
 # Defaults
 defaults:
   # all posts
@@ -37,13 +38,13 @@ defaults:
       author: matthew
       avatar: assets/images/sam.jpg
       image: assets/images/12.jpg
-      
+
   # all pages
   - scope:
       path: "_pages"
     values:
       layout: page
-      
+
 # Syntax
 markdown: kramdown
 highlighter: rouge
@@ -52,4 +53,12 @@ highlighter: rouge
 paginate: 10
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude:
+  [
+    README.markdown,
+    package.json,
+    grunt.js,
+    Gruntfile.js,
+    Gruntfile.coffee,
+    node_modules,
+  ]
