@@ -50,7 +50,26 @@ if (false && text) {
   );
 } else console.log("Container not found");
 
-AOS.init({
-  easing: "ease-out-quart",
-  duration: 1000,
-});
+
+function staggerTextAnimation(container, delay, offset) {
+  const words = container.textContent.split(" ");
+  container.innerHTML = words
+    .map((word, index) => {
+      return `<span style="display:inline-block" data-aos="zoom-out" data-aos-delay="${delay * index + offset
+        }">${word}</span>`;
+    })
+    .join(" ");
+}
+
+const title = document.querySelector(".fancy-font > .text");
+const description = document.querySelector(".description");
+
+staggerTextAnimation(title, 100, 100);
+staggerTextAnimation(description, 100, 100);
+
+setTimeout(() =>
+  AOS.init({
+    easing: "ease-out-quart",
+    duration: 500
+  }), 400
+);
