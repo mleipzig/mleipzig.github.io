@@ -3,6 +3,81 @@
  * 12/29/24
  */
 
+/* custom font (test-soehne) */
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-buch.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-buch-kursiv.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-kraftig.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-kraftig-kursiv.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-halbfett.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-halbfett-kursiv.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-dreiviertelfett.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-dreiviertelfett-kursiv.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-fett.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'test-soehne';
+  src: url('/assets/fonts/test-soehne-fett-kursiv.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+
+
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -135,11 +210,14 @@ nav > div {
 }
 
 .fancy-font > .text {
-  background: #000000;
+  /* background: #000000;
   background: linear-gradient(to top, #000000 0%, #595959 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /*text-shadow: 0 5px 10px rgba(0,0,0,0.05);*/
+  -webkit-text-fill-color: transparent; */
+}
+
+.fancy-font > .text > span {
+  display: inline-block;
 }
 
 .fancy-font > .emoji {

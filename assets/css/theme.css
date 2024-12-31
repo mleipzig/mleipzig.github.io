@@ -646,7 +646,6 @@ ol.list-featured li:before {
     font-weight: bold;
     font-size: 2rem;
     margin-right: 0.5rem;
-    font-family: Arial;
     line-height: 1;
     opacity: .25;
 }
@@ -671,7 +670,6 @@ footer {
 article {
 	font-size:20px;
 	line-height:1.86;
-    font-family:Lora;
 }
 .article-headline {
     font-family: Georgia,Times,"Times New Roman",serif;

@@ -2,38 +2,37 @@
 title: "Matthew Leipzig's Website"
 layout: default
 pagination:
-  enabled: true
+enabled: true
 description: "Matthew Leipzig's website!"
 ---
 
 <div class="hero border-bottom">
   <div class="container">
     <div class="hero-stack">
-      <img
-        src="{{ site.baseurl }}/assets/images/sam.jpg"
-        class="rounded-circle shadow-sm"
-        alt="Matthew Leipzig"
-        width="100"
-        height="100"
-        data-aos="zoom-out"
-      />
-      <h2 class="fancy-font" data-aos="zoom-out" data-aos-delay="50">
+      <img src="{{ site.baseurl }}/assets/images/sam.jpg" class="rounded-circle shadow-sm" alt="Matthew Leipzig"
+        width="100" height="100" data-aos="zoom-out" />
+      <h2 class="fancy-font">
         <span class="emoji hand-wave">👋</span>
-        <span class="text">Hello, I'm Matthew</span>
+        <span class="text">
+          <span data-aos="zoom-out" data-aos-delay="50">Hello,</span>
+          <span data-aos="zoom-out" data-aos-delay="150">I'm</span>
+          <span data-aos="zoom-out" data-aos-delay="250">Matthew</span>
+        </span>
       </h2>
-      <p class="max-w-sm" data-aos="zoom-out" data-aos-delay="100">
+      <p class="max-w-sm" data-aos="zoom-out" data-aos-delay="350">
         <span class="description"> {{ site.authors.matthew.bio }} </span>
       </p>
     </div>
 
-    <div class="social-bar" >
+    <div class="social-bar">
       <a aria-label="Email" data-aos="zoom-out" data-aos-delay="500" href="mailto:{{  site.authors.matthew.email }}">
         <i class="fa-solid fa-envelope"></i>
       </a>
       <a aria-label="Github" data-aos="zoom-out" data-aos-delay="600" href="{{ site.authors.matthew.github }}">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a aria-label="X (formerly Twitter)" data-aos="zoom-out" data-aos-delay="700" href="{{ site.authors.matthew.twitter }}">
+      <a aria-label="X (formerly Twitter)" data-aos="zoom-out" data-aos-delay="700"
+        href="{{ site.authors.matthew.twitter }}">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
     </div>
@@ -67,11 +66,8 @@ description: "Matthew Leipzig's website!"
         <ul class="pagination">
           {% if paginator.previous_page %}
           <li class="page-item">
-            <a
-              class="page-link"
-              href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-              >&laquo; Prev</a
-            >
+            <a class="page-link"
+              href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
           </li>
           {% else %}
           <li class="page-item disabled">
@@ -88,11 +84,8 @@ description: "Matthew Leipzig's website!"
           </li>
           {% endif %} {% endfor %} {% if paginator.next_page %}
           <li class="page-item">
-            <a
-              class="page-link"
-              href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-              >Next &raquo;</a
-            >
+            <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next
+              &raquo;</a>
           </li>
           {% else %}
           <li class="page-item disabled">

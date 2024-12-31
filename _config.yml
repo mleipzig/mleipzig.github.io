@@ -1,16 +1,18 @@
-# Site
+ # Site SEO and various texts stuff
 name: "mleipzig."
 title: "Matthew Leipzig's website"
 description: "Matt's website."
-logo: "assets/images/logo.png"
-favicon: "assets/images/favicon.ico"
-baseurl: "" # For GitHub Pages without project-specific subdirectory
-disqus: "demowebsite"
-email: "mleipzig@stanford.edu"
-mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
 
-include: ["_pages", "_projects"]
-permalink: /:title # Changed here
+authors:
+  matthew:
+    name: "Matthew Leipzig"
+    avatar: assets/images/sam.jpg
+    bio: "I write about statistics and causal inference. I also make cool coding projects in R."
+    email: mleipzig@stanford.edu
+    twitter: https://x.com/MattLeipzig
+    github: https://github.com/mleipzig
+
+# Advanced config below
 
 # Plugins
 plugins:
@@ -24,18 +26,20 @@ jekyll-minifier:
   uglifier_args:
     harmony: true
 
-authors:
-  matthew:
-    name: "Matthew Leipzig"
-    avatar: assets/images/sam.jpg
-    bio: "I write about statistics and causal inference. I also make cool coding projects in R."
-    email: mleipzig@stanford.edu
-    twitter: https://x.com/MattLeipzig
-    github: https://github.com/mleipzig
+# Site settings
+logo: "assets/images/logo.png"
+favicon: "assets/images/favicon.ico"
+baseurl: "" # For GitHub Pages without project-specific subdirectory
+disqus: "demowebsite"
+mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
 
-# Defaults
+# Include files to be copied to the _site directory
+include: ["_pages", "_projects"]
+permalink: /:title
+
+# Page variable defaults
 defaults:
-  # all posts
+  # (posts should be automatically assigned to matt and a default image)
   - scope:
       path: "_posts"
     values:
@@ -44,30 +48,30 @@ defaults:
       avatar: assets/images/sam.jpg
       image: assets/images/12.jpg
 
-  # all pages
+  # (pages should be automatically assigned the page layout)
   - scope:
       path: "_pages"
     values:
       layout: page
 
+  # (projects should be automatically assigned the project layout)
   - scope:
       path: "_projects"
     values:
       layout: project
-      title: "Project"
       permalink: /projects/:basename
 
 # Syntax
 markdown: kramdown
 highlighter: rouge
 
-# Paginate
+# Pagination for blogs (sad...library doesn't extend for other lists)
 paginate: 10
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude:
   [
-    README.markdown,
+    README.md,
     package.json,
     grunt.js,
     Gruntfile.js,
