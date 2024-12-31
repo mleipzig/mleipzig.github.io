@@ -154,14 +154,18 @@ nav > div {
 .card__ {
   color: black !important;
   display: flex;
-  flex-shrink: 0;
+  flex-shrink: 1;
   flex-direction: column;
   border: rgba(0, 0, 0, 0.1) solid 1px;
   border-radius: 0.4rem;
   padding: 22px;
   height: 170px;
-  width: 400px;
+  width: min(100vw, 400px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.project-slide .card__ {
+  flex-shrink: 0;
 }
 
 .card__title {
