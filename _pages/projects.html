@@ -2,3 +2,18 @@
 title: "Projects"
 permalink: "/projects/"
 ---
+
+<!-- Available vars: site.categories; categories.projects -->
+
+<div class="container">
+    {% for category in site.data.projects %}
+    <div class="project-list">
+        <h4>{{ category.name }}</h4>
+        <div class="project-row">
+            {% for project in category.projects %}
+            {% include project-preview-card.liquid %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

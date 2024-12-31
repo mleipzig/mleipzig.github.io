@@ -1,13 +1,22 @@
 <!-- vars: category, project -->
 
-<a href="/projects#{{ category.name }}" class="card__">
+<a href="/projects/{{project.name | downcase | replace: " ", "-" }}" class="card__">
   <div class="card__title">{{ project.name }}</div>
   <div class="card__desc">{{ project.description }}</div>
 
   <div class="spacer"></div>
 
   <div class="card__tag">
-    {{ category.name }}
+    <span class="card__category">
+      {{ category.name }}
+    </span>
+    {% if project.github %}
+    <span class="card__github">
+      •
+      <i class="fab fa-github"></i>
+      {{ project.github }}
+    </span>
+    {% endif %}
   </div>
 </a>
 

@@ -1,0 +1,37 @@
+# Publications
+
+- name: Some publication
+  date: 2021-01
+  authors: "Matthew Leipzig"
+  publication: "Journal of Causal Inference"
+  link: https://x.com
+
+- name: Another publication
+  date: 2021-02
+  authors: "Matthew Leipzig"
+  publication: "Journal of Causal Inference"
+  link: https://x.com
+
+- name: Third publication
+  date: 2021-03
+  authors: "Matthew Leipzig"
+  publication: "Journal of Causal Inference"
+  link: https://x.com
+
+- name: Some publication
+  date: 2021-01
+  authors: "Matthew Leipzig"
+  publication: "Journal of Causal Inference"
+  link: https://x.com
+
+- name: Another publication
+  date: 2021-02
+  authors: "Matthew Leipzig"
+  publication: "Journal of Causal Inference"
+  link: https://x.com
+
+- name: Third publication
+  date: 2021-03
+  authors: "Matthew Leipzig"
+  publication: "Journal of Causal Inference"
+  link: https://x.com

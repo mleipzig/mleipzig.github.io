@@ -89,10 +89,6 @@ nav > div {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
 }
 
-.card__:hover {
-  opacity: 0.75;
-}
-
 .card__title {
   font-size: 1em;
   font-weight: 600;
@@ -110,8 +106,19 @@ nav > div {
   font-size: 0.9em;
   font-weight: 600;
   line-height: 1;
-  color: #03a87c;
+  
   margin-top: 16px;
+}
+
+.card__tag__huge {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  margin: 8px 0;
+}
+
+.card__category {
+  color: #03a87c;
 }
 
 .spacer {
@@ -171,6 +178,52 @@ nav > div {
   align-items: center;
   gap: 16px;
 }
+
+.project-list > h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 20px;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.publication {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication strong {
+  font-size: 18px;
+  color: #222;
+  display: block;
+}
+
+.publication__authors {
+  font-size: 14px;
+  color: #555;
+}
+
+.publication__authors span {
+  font-size: 0.9em;
+}
+
+.publication__publication {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
 
 @media (max-width: 786px) {
   .hero {

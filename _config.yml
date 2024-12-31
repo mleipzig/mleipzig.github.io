@@ -9,7 +9,7 @@ disqus: "demowebsite"
 email: "mleipzig@stanford.edu"
 mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
 
-include: ["_pages"]
+include: ["_pages", "_projects"]
 permalink: /:title # Changed here
 
 # Plugins
@@ -18,7 +18,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-picture-tag
   - jekyll-minifier
 
 jekyll-minifier:
@@ -50,6 +49,13 @@ defaults:
       path: "_pages"
     values:
       layout: page
+
+  - scope:
+      path: "_projects"
+    values:
+      layout: project
+      title: "Project"
+      permalink: /projects/:basename
 
 # Syntax
 markdown: kramdown

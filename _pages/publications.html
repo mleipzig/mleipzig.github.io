@@ -1,0 +1,26 @@
+---
+title: "Publications"
+permalink: "/publications/"
+---
+
+<!-- date: 2021-02-01
+  authors: ["Matthew Leipzig"]
+  publication: "Journal of Causal Inference"
+  link: https://x.com -->
+
+<div class="container">
+    <div class="publication-list">
+        {% for publication in site.data.publications %}
+        <div class="publication">
+            <strong>{{ publication.name }} ({{ publication.date }})</strong>
+            <div class="publication__authors">
+                {{publication.authors}}
+            </div>
+            <div class="publication__publication">{{ publication.publication }}</div>
+            <div class="publication__link">
+                <a href="{{ publication.link }}">Read <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

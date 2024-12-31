@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% assign projectID = page.name | split: "." | first %}
+{% for category in site.data.projects %}
+  {% for project in category.projects %}
+    {% assign _thisID = project.name | downcase | replace: " ", "-" %}
+    {% if _thisID == projectID %}
+      {% assign project = project %}
+      {% assign category = category %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+<div class="container mt-4">
+    <div class="card__tag__huge">
+        <span class="card__category">
+          {{ category.name }}
+        </span>
+        {% if project.github %}
+        <span class="card__github">
+          •
+          <i class="fab fa-github"></i>
+          {{ project.github }}
+        </span>
+        {% endif %}
+      </div>
+    <h3 class="font-weight-bold spanborder"><span>{{project.name}}</span></h3>
+    <div class="page-content">
+        {{ content }}
+    </div>
+</div>
