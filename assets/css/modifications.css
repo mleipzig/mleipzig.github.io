@@ -345,6 +345,10 @@ nav > div {
     right: 15px;
     top: 15px;
   }
+
+  nav form {
+    margin: 8px 0 !important;
+  }
 }
 
 .max-w-sm {
