@@ -52,7 +52,7 @@ if (false && text) {
 
 
 function staggerTextAnimation(container, delay, offset) {
-  const words = container.textContent.split(" ");
+  const words = container.textContent.trim().split(" ");
   container.innerHTML = words
     .map((word, index) => {
       return `<span style="display:inline-block" data-aos="zoom-out" data-aos-delay="${delay * index + offset
