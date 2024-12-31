@@ -33,11 +33,8 @@
 
     <!-- Navbar -->
     <nav class="topnav border-bottom navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="flex w-100">
+    <div class="w-100">
         <a style="flex-grow: 1" class="navbar-brand" href="{{ site.baseurl }}/"><strong>{{site.name}}</strong></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="navbar-collapse collapse" style="justify-content: end;" id="navbarColor02">
             <ul class="navbar-nav d-flex">
                {% include menu-header.html %}
@@ -46,6 +43,9 @@
                 {% include search-lunr.html %}
             </ul>
         </div>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <i style="font-size: 20px" class="fa-solid fa-bars"></i>
+        </button>
     </div>
     </nav>
 
