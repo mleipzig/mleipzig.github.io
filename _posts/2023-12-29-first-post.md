@@ -1,5 +1,5 @@
 ---
-title: This is my first post on this site.
+title: Sometimes, sleeping on the wrong side of the bed is good.
 categories: rants
 tags: featured
 ---

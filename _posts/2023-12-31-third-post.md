@@ -1,5 +1,5 @@
 ---
-title: How does AI work?
+title: Why AI such a confusing era of technology
 categories: rants tech
 tags: featured
 image: assets/images/4.jpg

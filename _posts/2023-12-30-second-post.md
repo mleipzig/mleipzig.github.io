@@ -1,5 +1,5 @@
 ---
-title: Ok, lets start writing the second post...
+title: Ok, lets start writing the second post using Neovim
 categories: rants
 tags: featured
 image: assets/images/2.jpg
