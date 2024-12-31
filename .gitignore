@@ -1,6 +1,5 @@
 .DS_Store
 _site
-_pages/.DS_Store
 *.history
 .jekyll-cache
 *.lock
