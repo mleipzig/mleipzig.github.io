@@ -1,37 +1,35 @@
-# Publications
-
-- name: Some publication
+- name: "Causal Effects of Policy Changes on Economic Growth"
   date: 2021-01
-  authors: "Matthew Leipzig"
+  authors: "Matthew Leipzig, Sarah Kim"
   publication: "Journal of Causal Inference"
-  link: https://x.com
+  link: https://jci.example.com/article1
 
-- name: Another publication
+- name: "Bayesian Approaches to Counterfactual Analysis in Healthcare"
   date: 2021-02
-  authors: "Matthew Leipzig"
-  publication: "Journal of Causal Inference"
-  link: https://x.com
+  authors: "Matthew Leipzig, Raj Patel"
+  publication: "Journal of Computational Statistics"
+  link: https://jcs.example.com/article2
 
-- name: Third publication
+- name: "A New Framework for Estimating Interventions in Dynamic Systems"
   date: 2021-03
-  authors: "Matthew Leipzig"
-  publication: "Journal of Causal Inference"
-  link: https://x.com
+  authors: "Matthew Leipzig, Emily Zhang, Thomas Green"
+  publication: "Journal of Machine Learning Research"
+  link: https://jmlr.example.com/article3
 
-- name: Some publication
-  date: 2021-01
-  authors: "Matthew Leipzig"
-  publication: "Journal of Causal Inference"
-  link: https://x.com
+- name: "Structural Equation Modeling in Behavioral Sciences"
+  date: 2021-04
+  authors: "Matthew Leipzig, Maria Gonzales"
+  publication: "Journal of Applied Behavioral Science"
+  link: https://jabs.example.com/article4
 
-- name: Another publication
-  date: 2021-02
-  authors: "Matthew Leipzig"
-  publication: "Journal of Causal Inference"
-  link: https://x.com
+- name: "Understanding Hidden Confounders in Observational Data"
+  date: 2021-05
+  authors: "Matthew Leipzig, Andrew Lee"
+  publication: "Journal of Data Science"
+  link: https://jds.example.com/article5
 
-- name: Third publication
-  date: 2021-03
-  authors: "Matthew Leipzig"
-  publication: "Journal of Causal Inference"
-  link: https://x.com
+- name: "Causal Diagrams: Enhancing Interpretability in Deep Learning Models"
+  date: 2021-06
+  authors: "Matthew Leipzig, Sophie Nguyen, David Liu"
+  publication: "Journal of Artificial Intelligence Research"
+  link: https://jair.example.com/article6

@@ -9,6 +9,14 @@ To continue adding content to the site, you only need to edit in these three pla
     * After adding projects to _data, make a new `.md` file under _projects with the name of the file the same as the title of your project with lowercase and separated with dashes. 
     > [!IMPORTANT]
     > Naming is case sensitive! (The project page will reverse search the projects database given the file name)
+    * Make sure to include:
+        ```
+        ---
+        title: This affects the page title and SEO related things.
+        ---
+        ```
+
+        at the beginning of the file. Unfortunately, this step cannot be automated but will help with SEO. Does not affect content or project data.
 3. `_posts/`
     * To add posts, follow the naming convention.
     * You may add as many categories and tags as you wish.

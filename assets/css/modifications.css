@@ -6,75 +6,28 @@
 /* custom font (test-soehne) */
 
 @font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-buch.woff2') format('woff2');
+  font-family: "OpenRunde";
+  src: url("/assets/fonts/OpenRunde-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-buch-kursiv.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-kraftig.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-kraftig-kursiv.woff2') format('woff2');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-halbfett.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-halbfett-kursiv.woff2') format('woff2');
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-dreiviertelfett.woff2') format('woff2');
+  font-family: "OpenRunde";
+  src: url("/assets/fonts/OpenRunde-Bold.woff2") format("woff2");
   font-weight: 700;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-dreiviertelfett-kursiv.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
+  font-family: "OpenRunde";
+  src: url("/assets/fonts/OpenRunde-Medium.woff2") format("woff2");
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-fett.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
+  font-family: "OpenRunde";
+  src: url("/assets/fonts/OpenRunde-SemiBold.woff2") format("woff2");
+  font-weight: 600;
 }
-
-@font-face {
-  font-family: 'test-soehne';
-  src: url('/assets/fonts/test-soehne-fett-kursiv.woff2') format('woff2');
-  font-weight: 800;
-  font-style: italic;
-}
-
 
 
 
@@ -306,6 +259,31 @@ nav > div {
   margin-bottom: 10px;
 }
 
+
+.article-post {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: rgba(36, 36, 36, 1);
+  letter-spacing: -0.06px
+}
+
+.article-post pre {
+  background: #f8f8f8;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.article-post pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.title-style {
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+}
 
 @media (max-width: 786px) {
   .hero {

@@ -9,7 +9,7 @@ Est ipsum dolore reprehenderit dolor labore cupidatat velit voluptate magna null
 
 > So we got quotes and stuff too?
 
-```bash
+```python
 import torch
 
 def hello()
@@ -23,3 +23,9 @@ sudo rm -rf /
 2. Right?
 
 Sunt aliqua occaecat Lorem tempor quis cupidatat commodo incididunt. Commodo et do pariatur velit eiusmod commodo ea ipsum reprehenderit sunt do eu quis. Consequat id elit in exercitation.
+
+| Month    | Savings |
+| -------- | ------- |
+| January  | $250    |
+| February | $80     |
+| March    | $420    |

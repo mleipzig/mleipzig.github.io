@@ -65,6 +65,7 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 
+
 # Pagination for blogs (sad...library doesn't extend for other lists)
 paginate: 10
 
