@@ -19,5 +19,4 @@ group :jekyll_plugins do
     gem 'jekyll-paginate'
     gem 'jekyll-seo-tag'
     gem 'jekyll-minifier'
-    gem 'jekyll_picture_tag'
 end
