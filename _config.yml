@@ -18,6 +18,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-picture-tag
+  - jekyll-minifier
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
 
 authors:
   matthew:
