@@ -4815,7 +4815,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid #e8f3ec;
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4861,7 +4861,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid #e8f3ec;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -4873,7 +4873,7 @@ input[type="button"].btn-block {
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid #e8f3ec;
+  border-top: 1px solid rgba(0,0,0,0.1);
 }
 .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
@@ -6914,23 +6914,23 @@ button.bg-lightblue:focus {
 }
 
 .border {
-  border: 1px solid #e8f3ec !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 .border-top {
-  border-top: 1px solid #e8f3ec !important;
+  border-top: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 .border-right {
-  border-right: 1px solid #e8f3ec !important;
+  border-right: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e8f3ec !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 .border-left {
-  border-left: 1px solid #e8f3ec !important;
+  border-left: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 .border-0 {

@@ -13,8 +13,12 @@
       github: b0kch01/tool-one
 
     - name: The Great Tool
+      image: /assets/images/6.jpg
+      role: Project Manager
+      outcomes: 100% accuracy; 50k user downloads
       description: This is something really cool that I'm trying to release by 2027. Solves everything according to statistics.
       github: b0kch01/great-tool
+      site: https://www.example.com
 
     - name: The Best Tooling
       description: This is another cool tooling but this time its the best one. Made in R and Python.

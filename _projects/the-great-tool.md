@@ -2,4 +2,4 @@
 title: "The Great Tool"
 ---
 
-Hello
+Hello, this is page content lol
