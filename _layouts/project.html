@@ -16,9 +16,9 @@ layout: default
 
 <div class="container container-smaller mt-4">
   <div class="card__tag__huge">
-    <span class="card__category">
+    <a href="/projects/#{{ category.name }}" class="card__category">
       {{ category.name }}
-    </span>
+    </a>
     {% if project.github %}
     <span class="card__github">
       •

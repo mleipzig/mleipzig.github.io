@@ -351,7 +351,7 @@ nav > div {
   padding: 0 4rem;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 786px) {  
   .hero {
     padding: 1.8rem 0;
     font-size: 0.8rem;
@@ -375,6 +375,22 @@ nav > div {
 }
 
 @media (max-width: 991px) {
+  .container-smaller {
+    padding: 0 1rem;
+  }
+
+  .project-info-card {
+    flex-direction: column;
+  }
+
+  .project-info-card__image {
+    width: 100%;
+  }
+
+  .project-info-card__visit {
+    margin-left: 0;
+  }
+
   nav > div {
     flex-direction: column;
   }
