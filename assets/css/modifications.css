@@ -266,7 +266,7 @@ nav > div {
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  font-size: 0.9em;
+  font-size: 0.875em;
 }
 
 .project-info-card__image {
@@ -345,6 +345,10 @@ nav > div {
 .title-style {
   font-weight: 600;
   letter-spacing: -0.1rem;
+}
+
+.container-smaller {
+  padding: 0 4rem;
 }
 
 @media (max-width: 786px) {

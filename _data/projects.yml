@@ -11,6 +11,10 @@
     - name: Tool One for Developers
       description: I am also passionate about creating codebases and dashboards to facilitate my work and help others.
       github: b0kch01/tool-one
+      image: /assets/images/1.jpg
+      role: Lead Developer
+      outcomes: Increased productivity by 30%; adopted by 10+ teams internally
+      site: https://www.tool-one.example.com
 
     - name: The Great Tool
       image: /assets/images/6.jpg
@@ -21,4 +25,9 @@
       site: https://www.example.com
 
     - name: The Best Tooling
-      description: This is another cool tooling but this time its the best one. Made in R and Python.
+      description: This is another cool tooling but this time it's the best one. Made in R and Python.
+      github: b0kch01/best-tooling
+      image: /assets/images/3.jpg
+      role: Data Scientist
+      outcomes: Enabled 20% faster data preprocessing; used by 200+ researchers
+      site: https://www.best-tooling.example.com
