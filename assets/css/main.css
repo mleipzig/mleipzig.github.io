@@ -8181,6 +8181,10 @@ button.bg-lightblue:focus {
   margin: 5rem !important;
 }
 
+.mt-5 {
+  margin-top: 4rem !important;
+}
+
 .mt-6,
 .my-6 {
   margin-top: 5rem !important;

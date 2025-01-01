@@ -14,18 +14,11 @@ layout: default
 {% endfor %}
 {% endfor %}
 
-<div class="container container-smaller mt-4">
+<div class="container container-smaller mt-5">
   <div class="card__tag__huge">
     <a href="/projects/#{{ category.name }}" class="card__category">
       {{ category.name }}
     </a>
-    {% if project.github %}
-    <span class="card__github">
-      •
-      <i class="fab fa-github"></i>
-      {{ project.github }}
-    </span>
-    {% endif %}
   </div>
   <h3 class="font-weight-bold spanborder"><span>{{project.name}}</span></h3>
   <div class="page-content">
@@ -73,7 +66,7 @@ layout: default
       {% endif %}
     </div>
 
-    <div class="project-content mt-4">
+    <div class="project-content article-post max-w-sm mx-auto mt-5">
       {{ content }}
     </div>
 
