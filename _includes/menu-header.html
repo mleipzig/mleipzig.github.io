@@ -7,8 +7,17 @@
     <a class="nav-link" href="{{ site.baseurl }}/publications/">Publications</a>
     {% endif %}
   </li>
-  <li class="nav-item">
+  <li class="nav-item dropdown">
     <a class="nav-link" href="{{ site.baseurl }}/projects/">Projects</a>
+
+    <div class="dropdown__menu">
+      {% for category in site.data.projects %}
+      <div class="dropdown__category">{{ category.name }}</div>
+
+      {% for project in category.projects %}
+      <a class="dropdown__subcategory" href="/projects/{{project.name | downcase | replace: " ", "-"}}"> {{ project.name }} </a>
+      {% endfor %} {% endfor %}
+    </div>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="{{ site.baseurl }}/contact/">Contact</a>
