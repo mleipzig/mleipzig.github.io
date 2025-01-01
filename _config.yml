@@ -3,6 +3,9 @@ name: "mleipzig."
 title: "Matthew Leipzig's website"
 description: "Matt's website."
 
+# Comment out below if you want to use this site's publication feature
+scholar: "https://scholar.google.com/citations?user=5ng5MgYAAAAJ&hl=en"
+
 authors:
   matthew:
     name: "Matthew Leipzig"
