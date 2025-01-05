@@ -4,7 +4,6 @@
       description: My primary work uses novel statistical techniques to evaluate policies and treatments. Solving long-standing debates in science.
       github: b0kch01/causal-inference
       image: /assets/images/14.jpg
-      role: Principal Investigator
       outcomes: Published 3 papers in top-tier journals; influenced policy decisions in 2 states
       site: https://www.example.com/causal-inference
 
@@ -15,7 +14,6 @@
       role: Lead Researcher
       outcomes: Achieved 95% accuracy on validation datasets; identified 3 clinically relevant subgroups
       site: https://www.example.com/ml-cardiac-diagnosis
-
 
 - name: Data Science Tools
   projects:

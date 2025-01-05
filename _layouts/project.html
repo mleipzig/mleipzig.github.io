@@ -2,17 +2,11 @@
 layout: default
 ---
 
-{% assign projectID = page.name | split: "." | first %}
-{% for category in site.data.projects %}
-{% for project in category.projects %}
-{% assign _thisID = project.name | downcase | replace: " ", "-" %}
-{% if _thisID == projectID %}
-{% assign project = project %}
-{% assign category = category %}
-{% break %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% assign projectID = page.name | split: "." | first %} {% for category in
+site.data.projects %} {% for project in category.projects %} {% assign _thisID =
+project.name | downcase | replace: " ", "-" %} {% if _thisID == projectID %} {%
+assign project = project %} {% assign category = category %} {% break %} {%
+endif %} {% endfor %} {% endfor %}
 
 <div class="container container-smaller mt-5">
   <div class="card__tag__huge">
@@ -22,8 +16,9 @@ layout: default
   </div>
   <h3 class="font-weight-bold spanborder"><span>{{project.name}}</span></h3>
   <div class="page-content">
-
     <!-- Similar to vercel site deployment card -->
+    {% unless project.disableCard %} {% if project.role && project.outcomes &&
+    project.github %}
     <div class="project-info-card">
       <!-- Image on the left -->
       <div class="project-info-card__image">
@@ -59,15 +54,17 @@ layout: default
       </div>
 
       {% if project.site %}
-        <a href="{{ project.site }}" class="project-info-card__visit">
-          <span>Visit Site</span>
-          <i class="fas fa-arrow-up-right-from-square"></i>
-        </a>
+      <a href="{{ project.site }}" class="project-info-card__visit">
+        <span>Visit Site</span>
+        <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
       {% endif %}
     </div>
+    {% endif %} {% endunless %}
 
     <div class="project-content article-post max-w-sm mx-auto mt-5">
       {{ content }}
     </div>
-
   </div>
+</div>
+
