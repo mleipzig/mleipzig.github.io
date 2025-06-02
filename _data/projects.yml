@@ -1,19 +1,19 @@
 - name: Research
   projects:
     - name: Causal Inference
-      description: My primary work uses novel statistical techniques to evaluate policies and treatments. Solving long-standing debates in science.
-      github: b0kch01/causal-inference
+      #description: My primary work uses novel statistical techniques to evaluate policies and treatments. Solving long-standing debates in science.
+      #github: b0kch01/causal-inference
       image: /assets/images/14.jpg
-      outcomes: Published 3 papers in top-tier journals; influenced policy decisions in 2 states
-      site: https://www.example.com/causal-inference
+      #outcomes: Published 3 papers in top-tier journals; influenced policy decisions in 2 states
+      #site: https://www.example.com/causal-inference
 
     - name: Machine Learning
       description: Building a foundation model for diagnosing cardiac diseases on MRI and automatically identifying heterogeneous subgroups.
-      github: b0kch01/ml-cardiac-diagnosis
+      #github: b0kch01/ml-cardiac-diagnosis
       image: /assets/images/14.jpg
-      role: Lead Researcher
-      outcomes: Achieved 95% accuracy on validation datasets; identified 3 clinically relevant subgroups
-      site: https://www.example.com/ml-cardiac-diagnosis
+      #role: Lead Researcher
+      #outcomes: Achieved 95% accuracy on validation datasets; identified 3 clinically relevant subgroups
+      #site: https://www.example.com/ml-cardiac-diagnosis
 
 
 # - name: Data Science Tools
