@@ -15,6 +15,8 @@
       outcomes: Achieved 95% accuracy on validation datasets; identified 3 clinically relevant subgroups
       site: https://www.example.com/ml-cardiac-diagnosis
 
+
+<!--
 - name: Data Science Tools
   projects:
     - name: Tool One for Developers
@@ -40,3 +42,4 @@
       role: Data Scientist
       outcomes: Enabled 20% faster data preprocessing; used by 200+ researchers
       site: https://www.best-tooling.example.com
+-->
