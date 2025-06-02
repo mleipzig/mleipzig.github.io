@@ -8,7 +8,7 @@
       #site: https://www.example.com/causal-inference
 
     - name: Machine Learning
-      description: Building a foundation model for diagnosing cardiac diseases on MRI and automatically identifying heterogeneous subgroups.
+      #description: Building a foundation model for diagnosing cardiac diseases on MRI and automatically identifying heterogeneous subgroups.
       #github: b0kch01/ml-cardiac-diagnosis
       image: /assets/images/14.jpg
       #role: Lead Researcher
